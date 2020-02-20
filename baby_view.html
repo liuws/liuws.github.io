@@ -32,16 +32,7 @@ if(pageNumber==12) {bb=1;}
 window.location.href="baby_view.html?pno="+bb;
 }
 function imgUrl(){
-	if(pageNumber==4||pageNumber==5||pageNumber==6||
-	pageNumber==7||pageNumber==8||pageNumber==13||
-	pageNumber==17||pageNumber==18||
-	pageNumber==23||
-	pageNumber==24||pageNumber==25||pageNumber==32||
-	pageNumber==34||pageNumber==36||pageNumber==37||
-	pageNumber==38||pageNumber==42||
-	pageNumber==43||
-	pageNumber==44||
-	pageNumber==45){
+	if(pageNumber==-100||pageNumber==-101){
 		if(pageNumber<10){
 			document.images.imgInit.src = "images/baby/real/00"+ pageNumber+".jpg";
 			document.getElementById("imgInit").style.height = "1000px";
