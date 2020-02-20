@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>牛牛小宝贝</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="牛牛小宝贝"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+
+<link rel="stylesheet" type="text/css" href="meta/blueprint/screen.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="meta/blueprint/print.css" media="print" />
+<link rel="stylesheet" href="meta/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="meta/blueprint/plugins/link-icons/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" type="text/css" href="meta/cvl.css" />
+
+<script language="javascript">
+<!--
+var strHref = window.location.href;
+var pageName = strHref.slice(strHref.lastIndexOf("?")+1);
+var pageNumber=parseInt(pageName.replace("pno=",""));
+function forward(){
+var aa=pageNumber-1;
+if(pageNumber==1) {aa=12;}
+window.location.href="baby_view.html?pno="+aa;
+}
+function back(){
+var bb=pageNumber+1;
+if(pageNumber==12) {bb=1;}
+window.location.href="baby_view.html?pno="+bb;
+}
+function imgUrl(){
+	if(pageNumber==4||pageNumber==5||pageNumber==6||
+	pageNumber==7||pageNumber==8||pageNumber==13||
+	pageNumber==17||pageNumber==18||
+	pageNumber==23||
+	pageNumber==24||pageNumber==25||pageNumber==32||
+	pageNumber==34||pageNumber==36||pageNumber==37||
+	pageNumber==38||pageNumber==42||
+	pageNumber==43||
+	pageNumber==44||
+	pageNumber==45){
+		if(pageNumber<10){
+			document.images.imgInit.src = "images/baby/real/00"+ pageNumber+".jpg";
+			document.getElementById("imgInit").style.height = "1000px";
+			document.getElementById("imgInit").style.width = "666px";
+		}
+		else{
+			document.images.imgInit.src = "images/baby/real/0"+ 
+			pageNumber+".jpg";
+			document.getElementById("imgInit").style.height = "1000px";
+			document.getElementById("imgInit").style.width = "666px";
+		}
+	}
+	else{
+		if(pageNumber<10){
+			document.images.imgInit.src = "images/baby/real/00"+ pageNumber+".jpg";
+			document.getElementById("imgInit").style.height = "666px";
+			document.getElementById("imgInit").style.width = "1000px";
+		}
+		else{
+			document.images.imgInit.src = "images/baby/real/0"+ 
+			pageNumber+".jpg";
+			document.getElementById("imgInit").style.height = "666px";
+			document.getElementById("imgInit").style.width = "1000px";
+		}
+	}
+}
+
+//--></script>
+
+</head>
+<body>
+
+
+<div id="content">
+<h1 class="title">牛牛小宝贝</h1>
+
+
+<div class="container">
+<hr>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1">{<font color="red">我们的小萌照抢先看！</font> <a href="baby.html">预览模式</a>}</h2>
+<div class="outline-text-2" id="text-1">
+
+<h3>
+<center>
+<input type="button" value="上一页"  onclick="forward()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="下一页" onclick="back()">
+</center>
+</h2>
+<hr>
+
+
+<center>
+<img src="javascript:imgUrl()"  id="imgInit" onerror="imgUrl()">
+</center>
+
+
+
+<hr class="space">
+<hr>
+
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="contact">webmaster: <a href="mailto:liuws@njtech.edu.cn">liuws@njtech.edu.cn</a><br/>
+Department of Computer Science and Technology, Nanjing Tech University<br/>
+No. 30, South Puzhu Road, Nanjing 210000, P. R. China<br/>2020-02-21</p>
+</div>
+</body>
+
+<script language="javascript">
+
+</script>
+</html>
