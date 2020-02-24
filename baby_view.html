@@ -23,12 +23,12 @@ var pageName = strHref.slice(strHref.lastIndexOf("?")+1);
 var pageNumber=parseInt(pageName.replace("pno=",""));
 function forward(){
 var aa=pageNumber-1;
-if(pageNumber==1) {aa=12;}
+if(pageNumber==1) {aa=20;}
 window.location.href="baby_view.html?pno="+aa;
 }
 function back(){
 var bb=pageNumber+1;
-if(pageNumber==12) {bb=1;}
+if(pageNumber==20) {bb=1;}
 window.location.href="baby_view.html?pno="+bb;
 }
 function imgUrl(){
