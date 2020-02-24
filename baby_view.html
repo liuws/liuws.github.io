@@ -4,6 +4,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>牛牛小宝贝</title>
+<script>
+window.onload = function() 
+{
+    var now = new Date();
+    var reg = /^\s*([1-9]\d{3})\-(\d{1,2})\-(\d{1,2})\s*$/;
+    var _end1 = document.getElementById("end1").innerHTML;
+    if (!reg.test(_end1)) 
+    {
+        throw new Error("Date Format Is Error !");
+        return;
+    }
+    var end1 = new Date(_end1.replace(reg, "$1"), parseInt(_end1.replace(reg, "$2")) - 1, _end1.replace(reg, 
+ 
+"$3"));
+    document.getElementById("end2").innerHTML = Math.round((now - end1)/(1000*60*60*24));
+}
+</script>
+<span id="end1" style="display:none">2020-02-12</span>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="牛牛小宝贝"/>
 <meta name="generator" content="Org-mode"/>
@@ -74,7 +92,7 @@ function imgUrl(){
 <hr>
 
 <div id="outline-container-1" class="outline-2">
-<h2 id="sec-1">{<font color="red">我们的小萌照抢先看！</font> <a href="baby.html">预览模式</a>}</h2>
+<h2 id="sec-1">{<font color="red">我已经出生<span id="end2">xx</span>天咯！抢先看我的小萌照吧！</font> <a href="baby.html">预览模式</a>}</h2>
 <div class="outline-text-2" id="text-1">
 
 <h3>
